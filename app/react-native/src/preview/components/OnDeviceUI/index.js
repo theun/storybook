@@ -48,7 +48,7 @@ export default class OnDeviceUI extends Component {
   };
 
   componentDidMount() {
-    StatusBar.setHidden(true);
+    // StatusBar.setHidden(true);
   }
 
   componentWillUnmount = () => {
@@ -144,7 +144,7 @@ export default class OnDeviceUI extends Component {
     return (
       <View style={style.main}>
         <View style={previewContainerStyles}>
-          <Animated.View style={headerStyles}>
+          {/* <Animated.View style={headerStyles}>
             <TouchableWithoutFeedback onPress={this.handleToggleMenu}>
               <View>
                 <Image source={openIcon} style={style.icon} />
@@ -153,7 +153,7 @@ export default class OnDeviceUI extends Component {
             <Text style={style.headerText} numberOfLines={1}>
               {selectedKind} {selectedStory}
             </Text>
-          </Animated.View>
+          </Animated.View> */}
           <View style={previewWrapperStyles}>
             <View style={style.preview}>
               <StoryView url={url} events={events} />
